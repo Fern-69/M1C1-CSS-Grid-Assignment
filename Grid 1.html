@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>M1C1 CSS Grid Assignment</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+
+        .gridOne {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .colorBlue {
+            color: blue;
+        }
+
+        .gridTwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            margin-top: 50px;
+        }
+
+        .red p{
+            background-color: red;
+        }
+
+        .blue p {
+            background-color: blue;
+        }
+
+        .yellow p {
+            background-color: yellow;
+        }
+
+        .gridThree {
+            max-width: 500px;
+            height: 300px;
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            margin-top: 50px; 
+        }
+        .text_three {
+            background-color: red;
+        }
+  
+        .image {
+            background-color: blue;
+        }
+
+        .image img {
+            max-width: 500px;
+            max-height: 225px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gridFour {
+            background-color: green;
+            width: 500px;
+            display: grid;  
+            grid-template-rows: 1fr 1fr;
+            margin-top: 50px; 
+        }
+
+        #text2_Four {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .gridFive {
+            width: 500px;
+            display: grid;  
+            grid-template-rows: 1fr 1fr;
+            margin-top: 50px; 
+            background-color: grey;
+        }
+
+        #images_Five {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .image1_Five {
+            max-width: 200px;
+            max-height: 225px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image2_Five {
+            max-width: 200px;
+            max-height: 200px;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gridSix {
+            font-family: "Playwrite IN", serif;
+            font-weight: 600;
+            margin-top: 50px; 
+            width: 500px;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .icon_Six i {
+            font-size: 20px;
+            color: #9c0d0d;
+        }     
+
+    </style>
+
+</head> 
+
+<body>
+    <div class="gridOne">
+        <div class="colorBlack">Hello World</div>
+        <div class="colorBlue">My Fastantic Content</div>
+    </div>
+
+    <div class="gridTwo">
+        <div class="red">
+            <p>I make great pages</p>
+        </div>
+        <div class="blue">
+            <p>in my Full Stack course.</p>
+        </div>
+        <div class="yellow">
+            <p>Let's move forward!</p>
+        </div>
+    </div>
+
+    <div class="gridThree">
+        <div class="text_three">
+            <p>Here I am with my code</p>
+        </div>
+        <div class="image">
+            <img src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+
+    <div class="gridFour">
+        <div class="text1_Four">
+            <p>This is exercise five that corresponds to the first control</p>
+        </div>
+        <div id="text2_Four">
+            <p>I work with Grid</p>
+            <p>I make Rows and Columns</p>
+        </div>
+    </div>
+
+    <div class="gridFive">
+        <div class="text_Five">
+            <p>This is exercise five that corresponds to the first control</p>
+        </div>
+        <div id="images_Five">
+            <img src="https://media.istockphoto.com/id/2151904502/es/foto/closeup-young-man-software-developers-using-computer-to-write-code-application-program-for-ai.jpg?s=1024x1024&w=is&k=20&c=UYHnTPboC72kGenX-O1xpTbelL6JLPganBCi6RDuPMM=" alt="image1_five" class="image1_Five">
+            <img src="https://media.istockphoto.com/id/2121892454/es/foto/dise%C3%B1o-web-bloques-con-gr%C3%BAa-torre-en-computadora-port%C3%A1til.jpg?s=1024x1024&w=is&k=20&c=9pJCjWZJM8lu3z-lnNgDgdntKORbFO-JRtNB9Wq7hfs=" alt="image2_five" class="image2_Five">
+        </div>
+    </div>
+
+    <div class="gridSix">
+        <div class="icon_Six">
+            <i class="fa">&#xf108;</i>
+        </div>
+        <div id="text_Six">
+            <p>I work with Grid and Flexbox</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
